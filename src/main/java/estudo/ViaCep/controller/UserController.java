@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
     @Autowired
-    UserServiceImpl userService;
+    private UserServiceImpl userService;
 
     @PostMapping
     ResponseEntity<UserRequestDto> createUser(@RequestBody UserRequestDto userRequestDto){

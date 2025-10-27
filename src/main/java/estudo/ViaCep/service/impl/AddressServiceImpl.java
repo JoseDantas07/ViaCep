@@ -19,16 +19,16 @@ import java.util.UUID;
 public class AddressServiceImpl implements AddressService {
 
     @Autowired
-    AddressRepository addressRepository;
+    private AddressRepository addressRepository;
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    CepRepository cepRepository;
+    private CepRepository cepRepository;
 
     @Autowired
-    ChecksCepServiceImpl checkCepService;
+    private ChecksCepServiceImpl checkCepService;
 
     @Override
     public UUID createAddress(String userId,AddressRequestDto addressRequestDto) {

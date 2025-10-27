@@ -17,13 +17,13 @@ import java.util.List;
 public class CepServiceImpl implements CepService {
 
     @Autowired
-    CepRepository cepRepository;
+    private CepRepository cepRepository;
 
     @Autowired
-    ViaCepUrl viaCepUrl;
+    private ViaCepUrl viaCepUrl;
 
     @Autowired
-    ChecksCepServiceImpl checkscepServiceImpl;
+    private ChecksCepServiceImpl checkscepServiceImpl;
 
     @Override
     public void createCep(String cep) {

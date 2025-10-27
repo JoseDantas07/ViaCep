@@ -21,7 +21,7 @@ import java.util.List;
 public class CepController {
 
     @Autowired
-    CepServiceImpl cepService;
+    private CepServiceImpl cepService;
 
     @PostMapping
     ResponseEntity<CepEntity> createCep(@RequestBody CepRequestDto cepRequestDto){

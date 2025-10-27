@@ -23,7 +23,7 @@ import java.net.URI;
 public class AddressController {
 
     @Autowired
-    AddressServiceImpl addressService;
+    private AddressServiceImpl addressService;
 
     @PostMapping("/{userId}")
     ResponseEntity<AddressRequestDto> createAddress(@PathVariable String userId, @RequestBody AddressRequestDto addressRequestDto){

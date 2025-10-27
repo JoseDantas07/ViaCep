@@ -10,7 +10,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class ChecksCepServiceImpl {
 
     @Autowired
-    ViaCepUrl viaCepUrl;
+    private ViaCepUrl viaCepUrl;
 
     public String checkCep(String cep){
         cep = cep.replace("-", "" ).replace(" ","");
